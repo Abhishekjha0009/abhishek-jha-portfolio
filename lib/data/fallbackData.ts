@@ -115,29 +115,6 @@ export const FALLBACK_SITE_CONTENT: SiteContentData = {
 
 export const FALLBACK_PROJECTS: ProjectData[] = [
   {
-    id: "devhabit",
-    title: "DevHabit",
-    slug: "devhabit",
-    tagline: "Production-style MERN developer productivity platform with LeetCode & GitHub integrations",
-    category: "Full Stack",
-    problem: "Developers struggle to track coding consistency, daily goals, and GitHub/LeetCode progress across fragmented dashboards.",
-    architecture: "Monolithic MERN micro-architecture with stateless JWT authentication, scheduled daily reminders, and cached external API integrations for LeetCode/GitHub stats.",
-    solution: "Built an all-in-one productivity engine featuring daily coding goal tracking, automated streaks, profile customization, notes, and achievement unlocks.",
-    features: [
-      "User Authentication (Signup/Login with secure JWT token handling)",
-      "LeetCode Username Integration (automated streak & problem tracking)",
-      "GitHub Username Integration (activity & repository overview)",
-      "Daily Coding Goal Setting & Progress Tracker",
-      "Interactive Coding Streak Counter & Milestone Achievements",
-      "Daily Productivity Notes & Custom Profile Dashboard"
-    ],
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs", "Tailwind CSS"],
-    githubUrl: "https://github.com/Abhishekjha0009",
-    liveUrl: "https://github.com/Abhishekjha0009",
-    featured: true,
-    order: 1
-  },
-  {
     id: "onecart",
     title: "OneCart",
     slug: "onecart",
@@ -158,7 +135,7 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     githubUrl: "https://github.com/Abhishekjha0009/OneCart",
     liveUrl: "https://github.com/Abhishekjha0009/OneCart",
     featured: true,
-    order: 2
+    order: 1
   },
   {
     id: "smartwaste",
@@ -181,7 +158,7 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     githubUrl: "https://github.com/Abhishekjha0009",
     liveUrl: "https://github.com/Abhishekjha0009",
     featured: true,
-    order: 3
+    order: 2
   },
   {
     id: "dreamhome",
@@ -203,7 +180,7 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     githubUrl: "https://github.com/Abhishekjha0009/Real-Estate",
     liveUrl: "https://github.com/Abhishekjha0009/Real-Estate",
     featured: true,
-    order: 4
+    order: 3
   }
 ];
 
