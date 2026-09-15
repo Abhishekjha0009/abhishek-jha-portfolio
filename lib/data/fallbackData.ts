@@ -53,6 +53,7 @@ export interface SiteContentData {
     linkedin: string;
     leetcode: string;
     email: string;
+    phone: string;
   };
   aboutBio: string[];
   interests: string[];
@@ -103,7 +104,8 @@ export const FALLBACK_SITE_CONTENT: SiteContentData = {
     github: "https://github.com/Abhishekjha0009",
     linkedin: "https://www.linkedin.com/in/abhishek-jha-756641325/",
     leetcode: "https://leetcode.com/u/abhishek_dsa/",
-    email: "Officialabhishek9574@gmail.com"
+    email: "Officialabhishek9574@gmail.com",
+    phone: "+91 7667915325"
   },
   aboutBio: [
     "I am a Computer Science undergraduate at NIET passionate about full-stack engineering, clean API design, and algorithm optimization.",
@@ -190,12 +192,13 @@ export const FALLBACK_TECHNOLOGIES: TechnologyData[] = [
   { name: "JavaScript", category: "Languages & Tools", iconName: "javascript", highlight: true },
   { name: "TypeScript", category: "Languages & Tools", iconName: "typescript", highlight: true },
   { name: "Tailwind CSS", category: "Frontend", iconName: "tailwindcss", highlight: true },
-  { name: "GSAP", category: "Frontend", iconName: "gsap", highlight: true },
-  { name: "Sanity CMS", category: "Database & Cloud", iconName: "sanity", highlight: true },
   { name: "Socket.IO", category: "Backend", iconName: "socketio", highlight: true },
-  { name: "Supabase", category: "Database & Cloud", iconName: "supabase", highlight: false },
+  { name: "Cloudinary", category: "Database & Cloud", iconName: "cloudinary", highlight: true },
+  { name: "Firebase", category: "Database & Cloud", iconName: "firebase", highlight: true },
+  { name: "Razorpay", category: "Languages & Tools", iconName: "razorpay", highlight: true },
+  { name: "REST APIs", category: "Backend", iconName: "restapi", highlight: true },
+  { name: "C++", category: "Languages & Tools", iconName: "cpp", highlight: true },
   { name: "Git", category: "Languages & Tools", iconName: "git", highlight: false },
   { name: "GitHub", category: "Languages & Tools", iconName: "github", highlight: true },
-  { name: "C++", category: "Languages & Tools", iconName: "cpp", highlight: true },
   { name: "SQL", category: "Database & Cloud", iconName: "sql", highlight: false }
 ];

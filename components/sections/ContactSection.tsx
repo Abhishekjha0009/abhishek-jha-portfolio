@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { SiteContentData } from '../../lib/data/fallbackData';
-import { Mail, Code2, Copy, Check, Terminal, Send, ArrowUpRight } from 'lucide-react';
+import { Mail, Code2, Copy, Check, Terminal, Send, ArrowUpRight, Phone } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/Icons';
 import { useMasterAnimation } from '../gsap/MasterAnimationProvider';
 
@@ -11,7 +11,8 @@ interface ContactSectionProps {
 }
 
 export function ContactSection({ content }: ContactSectionProps) {
-  const [copied, setCopied] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const { registerRevealSection } = useMasterAnimation();
 
@@ -23,8 +24,14 @@ export function ContactSection({ content }: ContactSectionProps) {
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(content.socialLinks.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2500);
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText("7667915325");
+    setCopiedPhone(true);
+    setTimeout(() => setCopiedPhone(false), 2500);
   };
 
   return (
@@ -47,8 +54,22 @@ export function ContactSection({ content }: ContactSectionProps) {
             I am currently seeking software engineering opportunities, internships, and full-stack development roles. Feel free to reach out directly.
           </p>
 
-          {/* Email Copy Card */}
-          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+          {/* Contact Details Cards (Phone & Email) */}
+          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Phone Number Card */}
+            <div className="px-5 py-3 rounded-xl bg-slate-950 border border-slate-800 font-mono text-sm text-cyan-400 flex items-center gap-3 w-full sm:w-auto justify-between">
+              <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
+              <span>+91 7667915325</span>
+              <button
+                onClick={handleCopyPhone}
+                className="p-1.5 rounded-lg bg-slate-900 text-slate-400 hover:text-cyan-400 transition-colors"
+                title="Copy phone number"
+              >
+                {copiedPhone ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+              </button>
+            </div>
+
+            {/* Email Card */}
             <div className="px-5 py-3 rounded-xl bg-slate-950 border border-slate-800 font-mono text-sm text-cyan-400 flex items-center gap-3 w-full sm:w-auto justify-between">
               <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
               <span className="truncate">{content.socialLinks.email}</span>
@@ -57,16 +78,18 @@ export function ContactSection({ content }: ContactSectionProps) {
                 className="p-1.5 rounded-lg bg-slate-900 text-slate-400 hover:text-cyan-400 transition-colors"
                 title="Copy email to clipboard"
               >
-                {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+                {copiedEmail ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
               </button>
             </div>
+          </div>
 
+          <div className="pt-2 flex justify-center">
             <a
               href={`mailto:${content.socialLinks.email}`}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-mono text-sm font-semibold text-slate-950 hover:brightness-110 shadow-[0_0_20px_rgba(0,240,255,0.3)] flex items-center justify-center gap-2 w-full sm:w-auto transition-all"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-mono text-sm font-semibold text-slate-950 hover:brightness-110 shadow-[0_0_20px_rgba(0,240,255,0.3)] flex items-center justify-center gap-2 transition-all"
             >
               <Send className="w-4 h-4" />
-              <span>Send Email</span>
+              <span>Send Direct Email</span>
             </a>
           </div>
 
@@ -110,11 +133,11 @@ export function ContactSection({ content }: ContactSectionProps) {
         {/* Footer Credit & Copyright */}
         <div className="mt-16 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-2">
           <div>
-            © {new Date().getFullYear()} Abhishek Kumar. Built with Next.js 15, R3F, GSAP & Sanity.
+            © {new Date().getFullYear()} Abhishek Kumar. Built with Next.js 15, React & Tailwind CSS.
           </div>
           <div className="flex items-center gap-2 text-slate-400">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>All Systems Operational</span>
+            <span>Available For Opportunities</span>
           </div>
         </div>
       </div>

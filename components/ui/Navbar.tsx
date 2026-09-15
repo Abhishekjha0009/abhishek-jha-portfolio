@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Terminal, Code2, Cpu, User, Mail, FolderGit2, Menu, X, ExternalLink } from 'lucide-react';
+import { Terminal, Code2, Cpu, User, Mail, FolderGit2, Menu, X, Phone } from 'lucide-react';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Terminal Header Logo */}
+        {/* Terminal Header Logo & Phone Number */}
         <a
           href="#hero"
           className="flex items-center gap-2 group font-mono text-sm tracking-tight text-slate-200"
@@ -45,9 +45,9 @@ export function Navbar() {
             <span className="font-semibold text-slate-100 group-hover:text-cyan-400 transition-colors">
               abhishek<span className="text-cyan-400">.dev</span>
             </span>
-            <span className="text-[10px] text-slate-500 flex items-center gap-1 font-mono">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              ONLINE // MERN Architecture
+            <span className="text-[11px] text-cyan-400 font-mono font-medium flex items-center gap-1">
+              <Phone className="w-2.5 h-2.5 text-emerald-400 animate-pulse" />
+              +91 7667915325
             </span>
           </div>
         </a>
@@ -65,22 +65,20 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* CMS / Admin & Quick Actions */}
+        {/* Quick Contact Action */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="/studio"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+917667915325"
             className="px-3 py-1.5 rounded-lg border border-slate-800 bg-slate-900/50 text-xs font-mono text-slate-300 hover:border-cyan-500/40 hover:text-cyan-400 flex items-center gap-1.5 transition-all"
           >
-            <span>Sanity CMS</span>
-            <ExternalLink className="w-3 h-3" />
+            <Phone className="w-3 h-3 text-emerald-400" />
+            <span>+91 7667915325</span>
           </a>
           <a
             href="#contact"
             className="px-4 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-600 text-xs font-mono font-medium text-slate-950 hover:brightness-110 shadow-[0_0_20px_rgba(0,240,255,0.25)] transition-all"
           >
-            Deploy // Contact
+            Contact Me
           </a>
         </div>
 
@@ -114,13 +112,10 @@ export function Navbar() {
             })}
             <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
               <a
-                href="/studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between px-4 py-2.5 rounded-lg border border-slate-800 bg-slate-900 text-xs font-mono text-slate-300"
+                href="tel:+917667915325"
+                className="flex items-center justify-between px-4 py-2.5 rounded-lg border border-slate-800 bg-slate-900 text-xs font-mono text-cyan-400"
               >
-                <span>Sanity CMS Studio</span>
-                <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
+                <span>📞 Call: +91 7667915325</span>
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { Cpu, Terminal, Layers, Shield, Layout, Database, Wifi, Lock } from 'lucide-react';
+import { Cpu, Layers, Database, Wifi, Lock, Cloud, Code2 } from 'lucide-react';
 import { useMasterAnimation } from '../gsap/MasterAnimationProvider';
 
 export function EngineeringSection() {
@@ -16,62 +16,40 @@ export function EngineeringSection() {
 
   const specs = [
     {
-      code: "01 // NEXTJS_APP_ROUTER",
+      code: "01 // NEXTJS_REACT_FRONTEND",
       title: "Modern Next.js & React Architecture",
-      icon: Layout,
+      icon: Layers,
       color: "text-cyan-400",
       border: "border-cyan-500/20",
       bg: "bg-cyan-950/20",
       description:
-        "Built with Next.js 15 App Router, React Server & Client Components, TypeScript strict typing, and Tailwind CSS responsive styling for production web applications.",
-      techStack: ["Next.js 15", "React", "TypeScript", "Tailwind CSS", "App Router"],
+        "Built with Next.js 15 App Router, React Server & Client Components, TypeScript strict typing, and Tailwind CSS responsive layout systems for fast, clean user interfaces.",
+      techStack: ["Next.js 15", "React.js", "TypeScript", "Tailwind CSS", "Responsive Design"],
     },
     {
-      code: "02 // GSAP_MASTER_ANIMATION",
-      title: "Centralized GSAP Scroll Architecture",
-      icon: Layers,
+      code: "02 // FULL_STACK_MERN",
+      title: "Production MERN Monolith & Micro-APIs",
+      icon: Database,
       color: "text-indigo-400",
       border: "border-indigo-500/20",
       bg: "bg-indigo-950/20",
       description:
-        "Unified GSAP ScrollTrigger timeline controller preventing listener collision or memory leaks. Includes scroll velocity calculation driving the interactive technology marquee speed and direction.",
-      techStack: ["GSAP 3", "ScrollTrigger", "Velocity Observer", "Context Cleanup", "Timeline Staggers"],
+        "Express & Node.js backend servers handling complex CRUD operations, indexed MongoDB queries, sub-100ms API response targets, and structured RESTful route handlers.",
+      techStack: ["Node.js", "Express.js", "MongoDB", "REST APIs", "CRUD Systems"],
     },
     {
-      code: "03 // HEADLESS_CMS_SANITY",
-      title: "Sanity Headless CMS Workflow",
-      icon: Terminal,
-      color: "text-amber-400",
-      border: "border-amber-500/20",
-      bg: "bg-amber-950/20",
-      description:
-        "Complete headless CMS setup with GROQ queries, structured schema validation (Projects, Skills, Content), embedded Sanity Studio (/studio), and seamless fallback data layers for instant local previews.",
-      techStack: ["Sanity CMS", "GROQ API", "Embedded Studio", "Schema Validation", "Fallback Data Pipeline"],
-    },
-    {
-      code: "04 // FULL_STACK_MERN",
-      title: "Production MERN Monolith & Micro-APIs",
-      icon: Database,
-      color: "text-emerald-400",
-      border: "border-emerald-500/20",
-      bg: "bg-emerald-950/20",
-      description:
-        "Express & Node.js backend servers handling complex CRUD, indexed MongoDB queries, sub-100ms response targets, Razorpay payment flows, and Cloudinary media upload pipelines.",
-      techStack: ["Node.js", "Express.js", "MongoDB Indexing", "REST APIs", "Cloudinary Multer"],
-    },
-    {
-      code: "05 // REALTIME_WEBSOCKETS",
+      code: "03 // REALTIME_WEBSOCKETS",
       title: "Event-Driven Real-Time Communication",
       icon: Wifi,
       color: "text-purple-400",
       border: "border-purple-500/20",
       bg: "bg-purple-950/20",
       description:
-        "Bidirectional WebSocket multiplexing using Socket.IO for municipal waste pickup notifications, live worker dispatching, and Leaflet GIS spatial coordinate tracking.",
-      techStack: ["Socket.IO", "WebSockets", "Leaflet GIS", "OpenStreetMap", "Recharts Analytics"],
+        "Bidirectional WebSocket communication using Socket.IO for municipal waste pickup notifications, live worker dispatching, and Leaflet GIS spatial coordinate tracking.",
+      techStack: ["Socket.IO", "WebSockets", "Leaflet GIS", "OpenStreetMap", "Recharts"],
     },
     {
-      code: "06 // AUTH_SECURITY",
+      code: "04 // AUTH_SECURITY",
       title: "Authentication & Role-Based Access",
       icon: Lock,
       color: "text-rose-400",
@@ -79,7 +57,29 @@ export function EngineeringSection() {
       bg: "bg-rose-950/20",
       description:
         "Stateless JWT authorization tokens, bcrypt password hashing, Firebase Auth Google OAuth integrations, and strict Role-Based Access Control (RBAC) across multi-user portals.",
-      techStack: ["JWT Sessions", "Firebase Auth", "RBAC Security", "Bcrypt Hashing", "Protected Gateways"],
+      techStack: ["JWT Sessions", "Firebase Auth", "RBAC Security", "Bcrypt Hashing", "Protected APIs"],
+    },
+    {
+      code: "05 // CLOUD_PAYMENT_PIPELINES",
+      title: "Cloud Storage & Payment Integration",
+      icon: Cloud,
+      color: "text-emerald-400",
+      border: "border-emerald-500/20",
+      bg: "bg-emerald-950/20",
+      description:
+        "Cloudinary media CDN integration paired with Multer multipart file upload pipelines, combined with Razorpay API payment gateway processing for secure checkout flows.",
+      techStack: ["Cloudinary CDN", "Multer Uploads", "Razorpay Gateway", "Asset Pipelines", "Payment APIs"],
+    },
+    {
+      code: "06 // CPP_ALGORITHMS",
+      title: "C++ Data Structures & Algorithms",
+      icon: Code2,
+      color: "text-amber-400",
+      border: "border-amber-500/20",
+      bg: "bg-amber-950/20",
+      description:
+        "Standard Template Library (STL) optimization, pointer arithmetic, memory management, and algorithmic problem solving across Arrays, Hashing, Binary Search, and Dynamic Programming.",
+      techStack: ["C++ STL", "Data Structures", "Algorithms", "Time Complexity", "Memory Management"],
     },
   ];
 
@@ -95,7 +95,7 @@ export function EngineeringSection() {
           What This Portfolio <span className="text-cyan-400">Demonstrates</span>
         </h2>
         <p className="text-sm sm:text-base font-sans text-slate-400 mt-2 max-w-2xl">
-          Technical documentation outlining the architectural patterns, master animations, and full-stack engineering powering this platform.
+          Technical documentation outlining the architectural patterns, full-stack engineering, and problem solving powering this platform.
         </p>
       </div>
 
