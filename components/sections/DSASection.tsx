@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { SiteContentData } from '../../lib/data/fallbackData';
-import { Code2, ExternalLink, Award, CheckCircle, Cpu, ArrowUpRight } from 'lucide-react';
+import { Code2, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { useMasterAnimation } from '../gsap/MasterAnimationProvider';
 
 interface DSASectionProps {
@@ -28,7 +28,7 @@ export function DSASection({ content }: DSASectionProps) {
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
-          {/* Left Column: Stats & LeetCode Overview */}
+          {/* Left Column: LeetCode Overview */}
           <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/60 border border-amber-500/30 text-xs font-mono text-amber-400">
               <Code2 className="w-3.5 h-3.5 text-amber-400" />
@@ -43,14 +43,14 @@ export function DSASection({ content }: DSASectionProps) {
               Problem solving in <span className="font-mono text-amber-400 font-semibold">C++</span> focused on clean memory management, time complexity minimization, and foundational data structures.
             </p>
 
-            {/* Stat Card */}
+            {/* Stat / Profile Card */}
             <div className="p-5 rounded-2xl bg-slate-950/80 border border-amber-500/20 flex items-center justify-between">
               <div>
                 <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block">
-                  LeetCode Problems Solved
+                  LeetCode Profile
                 </span>
-                <span className="text-4xl font-extrabold font-mono text-amber-400 mt-1 block">
-                  {leetCodeStats.solvedCount}
+                <span className="text-xl font-bold font-mono text-amber-400 mt-1 block">
+                  @{leetCodeStats.username}
                 </span>
               </div>
               <a

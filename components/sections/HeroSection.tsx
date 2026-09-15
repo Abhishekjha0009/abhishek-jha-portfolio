@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { SiteContentData } from '../../lib/data/fallbackData';
-import { ExternalLink, Code2, Terminal, ArrowRight, ShieldCheck, Sparkles, Database } from 'lucide-react';
+import { ExternalLink, Code2, Terminal, ArrowRight, ShieldCheck, Layout, Database } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/Icons';
 import { gsap } from '../../lib/gsap/gsapSetup';
 
@@ -76,7 +76,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             className="px-6 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 font-mono text-sm font-medium text-slate-200 hover:border-amber-400/50 hover:text-amber-400 flex items-center gap-2 transition-all transform hover:-translate-y-0.5 backdrop-blur-md"
           >
             <Code2 className="w-4 h-4 text-amber-400" />
-            <span>LeetCode ({content.leetCodeStats.solvedCount})</span>
+            <span>LeetCode Profile</span>
           </a>
         </div>
 
@@ -112,9 +112,9 @@ export function HeroSection({ content }: HeroSectionProps) {
         {/* Feature Highlights Grid */}
         <div className="hero-animate grid grid-cols-1 sm:grid-cols-3 gap-4 mt-14 w-full max-w-3xl">
           <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md flex flex-col items-center text-center hover:border-cyan-500/30 transition-all">
-            <Sparkles className="w-5 h-5 text-cyan-400 mb-2" />
-            <h4 className="text-xs font-mono font-semibold text-slate-200 uppercase">GPU WebGL Engine</h4>
-            <p className="text-[11px] text-slate-400 mt-1">R3F + Three.js GLSL custom shader field</p>
+            <Layout className="w-5 h-5 text-cyan-400 mb-2" />
+            <h4 className="text-xs font-mono font-semibold text-slate-200 uppercase">Full-Stack Next.js</h4>
+            <p className="text-[11px] text-slate-400 mt-1">Modern React App Router & Tailwind CSS UI</p>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md flex flex-col items-center text-center hover:border-cyan-500/30 transition-all">
@@ -125,8 +125,8 @@ export function HeroSection({ content }: HeroSectionProps) {
 
           <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md flex flex-col items-center text-center hover:border-cyan-500/30 transition-all">
             <ShieldCheck className="w-5 h-5 text-emerald-400 mb-2" />
-            <h4 className="text-xs font-mono font-semibold text-slate-200 uppercase">370+ DSA Solved</h4>
-            <p className="text-[11px] text-slate-400 mt-1">C++ Data Structures & Algorithms expertise</p>
+            <h4 className="text-xs font-mono font-semibold text-slate-200 uppercase">C++ & Algorithms</h4>
+            <p className="text-[11px] text-slate-400 mt-1">Data Structures & Problem Solving</p>
           </div>
         </div>
       </div>

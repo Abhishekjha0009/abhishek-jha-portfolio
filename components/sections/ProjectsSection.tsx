@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ProjectData } from '../../lib/data/fallbackData';
 import { TechBadge } from '../ui/TechBadge';
-import { FolderGit2, ExternalLink, ChevronRight, Layers, Cpu, ShieldCheck } from 'lucide-react';
+import { FolderGit2, ExternalLink, ChevronRight, Layers, Cpu } from 'lucide-react';
 import { GithubIcon } from '../ui/Icons';
 import { CaseStudyModal } from '../ui/CaseStudyModal';
 import { useMasterAnimation } from '../gsap/MasterAnimationProvider';
@@ -141,7 +141,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                     <GithubIcon className="w-4 h-4" />
                   </a>
                 )}
-                {project.liveUrl && (
+                {project.liveUrl && project.liveUrl !== project.githubUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"

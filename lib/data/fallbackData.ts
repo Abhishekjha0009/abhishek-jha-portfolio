@@ -62,7 +62,7 @@ export const FALLBACK_SITE_CONTENT: SiteContentData = {
   name: "Abhishek Kumar",
   role: "Aspiring Software Developer / Full Stack Engineer",
   headline: "Building full-stack systems that solve real problems.",
-  subheadline: "I build production-style web applications with modern frontend, backend, real-time architectures, and GPU-accelerated interfaces.",
+  subheadline: "I build production-style web applications with modern frontend, backend, real-time architectures, and responsive interfaces.",
   location: "Greater Noida, India",
   education: {
     degree: "B.Tech - Computer Science and Engineering",
@@ -89,7 +89,7 @@ export const FALLBACK_SITE_CONTENT: SiteContentData = {
   leetCodeStats: {
     username: "abhishek_dsa",
     profileUrl: "https://leetcode.com/u/abhishek_dsa/",
-    solvedCount: "370+",
+    solvedCount: "LeetCode Profile",
     topics: [
       { name: "C++", level: "Primary Language", description: "Standard Template Library (STL), Memory allocation, Pointer arithmetic, Object-Oriented Design." },
       { name: "Arrays & Hashing", level: "Core DSA", description: "Sliding window, Two-pointer technique, Prefix sums, Hash Map lookup optimization." },
@@ -107,7 +107,7 @@ export const FALLBACK_SITE_CONTENT: SiteContentData = {
   },
   aboutBio: [
     "I am a Computer Science undergraduate at NIET passionate about full-stack engineering, clean API design, and algorithm optimization.",
-    "My focus spans building robust MERN applications with real-time capabilities, writing optimized C++ algorithms, and crafting polished interactive user experiences.",
+    "My focus spans building robust MERN applications with real-time capabilities, writing optimized C++ algorithms, and crafting polished user experiences.",
     "Beyond software development, I enjoy cricket, continuous learning, analytical problem solving, and personal growth."
   ],
   interests: ["Cricket", "Algorithmic Problem Solving", "Continuous Learning", "System Design", "Personal Growth"]
@@ -133,7 +133,6 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     ],
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind CSS", "Cloudinary", "Multer", "Razorpay"],
     githubUrl: "https://github.com/Abhishekjha0009/OneCart",
-    liveUrl: "https://github.com/Abhishekjha0009/OneCart",
     featured: true,
     order: 1
   },
@@ -156,7 +155,6 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     ],
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.IO", "Leaflet", "OpenStreetMap", "Recharts", "Tailwind CSS", "Cloudinary", "JWT"],
     githubUrl: "https://github.com/Abhishekjha0009",
-    liveUrl: "https://github.com/Abhishekjha0009",
     featured: true,
     order: 2
   },
@@ -178,7 +176,6 @@ export const FALLBACK_PROJECTS: ProjectData[] = [
     ],
     technologies: ["React.js", "Vite", "Tailwind CSS", "Express.js", "Node.js", "Axios", "Context API"],
     githubUrl: "https://github.com/Abhishekjha0009/Real-Estate",
-    liveUrl: "https://github.com/Abhishekjha0009/Real-Estate",
     featured: true,
     order: 3
   }
@@ -193,8 +190,6 @@ export const FALLBACK_TECHNOLOGIES: TechnologyData[] = [
   { name: "JavaScript", category: "Languages & Tools", iconName: "javascript", highlight: true },
   { name: "TypeScript", category: "Languages & Tools", iconName: "typescript", highlight: true },
   { name: "Tailwind CSS", category: "Frontend", iconName: "tailwindcss", highlight: true },
-  { name: "Three.js", category: "Frontend", iconName: "threejs", highlight: true },
-  { name: "React Three Fiber", category: "Frontend", iconName: "r3f", highlight: true },
   { name: "GSAP", category: "Frontend", iconName: "gsap", highlight: true },
   { name: "Sanity CMS", category: "Database & Cloud", iconName: "sanity", highlight: true },
   { name: "Socket.IO", category: "Backend", iconName: "socketio", highlight: true },

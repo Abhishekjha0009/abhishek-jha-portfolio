@@ -136,7 +136,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
                   <span>GitHub Repository</span>
                 </a>
               )}
-              {project.liveUrl && (
+              {project.liveUrl && project.liveUrl !== project.githubUrl && (
                 <a
                   href={project.liveUrl}
                   target="_blank"

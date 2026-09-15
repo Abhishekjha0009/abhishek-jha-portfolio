@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import { Cpu, Terminal, Layers, Shield, Sparkles, Database, Wifi, Lock } from 'lucide-react';
+import { Cpu, Terminal, Layers, Shield, Layout, Database, Wifi, Lock } from 'lucide-react';
 import { useMasterAnimation } from '../gsap/MasterAnimationProvider';
 
 export function EngineeringSection() {
@@ -16,15 +16,15 @@ export function EngineeringSection() {
 
   const specs = [
     {
-      code: "01 // WEBGL_GPU_ENGINE",
-      title: "Interactive GPU Particle System",
-      icon: Sparkles,
+      code: "01 // NEXTJS_APP_ROUTER",
+      title: "Modern Next.js & React Architecture",
+      icon: Layout,
       color: "text-cyan-400",
       border: "border-cyan-500/20",
       bg: "bg-cyan-950/20",
       description:
-        "Built with React Three Fiber + Three.js + GLSL custom vertex & fragment shaders. Computes 3D sine/cosine wave displacement and lerp-smoothed cursor interaction with dynamic point-sizing uniforms.",
-      techStack: ["React Three Fiber", "Three.js", "GLSL Shaders", "Custom Uniforms", "Mobile DPR Scaling"],
+        "Built with Next.js 15 App Router, React Server & Client Components, TypeScript strict typing, and Tailwind CSS responsive styling for production web applications.",
+      techStack: ["Next.js 15", "React", "TypeScript", "Tailwind CSS", "App Router"],
     },
     {
       code: "02 // GSAP_MASTER_ANIMATION",
@@ -95,7 +95,7 @@ export function EngineeringSection() {
           What This Portfolio <span className="text-cyan-400">Demonstrates</span>
         </h2>
         <p className="text-sm sm:text-base font-sans text-slate-400 mt-2 max-w-2xl">
-          Technical documentation outlining the architectural patterns, GPU shaders, master animations, and full-stack engineering powering this platform.
+          Technical documentation outlining the architectural patterns, master animations, and full-stack engineering powering this platform.
         </p>
       </div>
 
